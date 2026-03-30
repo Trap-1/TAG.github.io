@@ -155,3 +155,25 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* Make embedded <video class="rounded-video"> appear rounded. */
+.rounded-video {
+  border-radius: 12px;
+  overflow: hidden; /* Helps crop the video frame area */
+}
+
+/* Keep teleoperation videos at the same visual height. */
+.teleop-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.web-img {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
